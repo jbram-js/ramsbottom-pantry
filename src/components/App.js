@@ -1,13 +1,12 @@
 import '../styles/App.css';
+import NavBar from './NavBar';
+import About from './About';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Ramsbottom Pantry
-        </p>
-      </header>
+      <NavBar />
+      <About />
     </div>
   );
 }
