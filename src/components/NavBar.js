@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
-import logo from '../images/rp_logo.svg';
+import logo from "../images/rp_logo.svg";
 
 const NavBar = () => {
-    return (
+  return (
     <div className="NavBar">
       <img src={logo} alt="Ramsbottom Pantry logo" className="logo"></img>
       <ul className="nav-list">
@@ -16,10 +16,10 @@ const NavBar = () => {
             offset={-50}
             duration={500}
           >
-            About Us
+            About us
           </Link>
         </li>
-           <li className="nav-items">
+        <li className="nav-items">
           <Link
             activeClass="active"
             to="WhatWeNeed"
@@ -28,7 +28,7 @@ const NavBar = () => {
             offset={0}
             duration={500}
           >
-            What We Need
+            What we need
           </Link>
         </li>
         <li className="nav-items">
@@ -40,7 +40,7 @@ const NavBar = () => {
             offset={0}
             duration={500}
           >
-            Contact Us
+            Contact us
           </Link>
         </li>
         <li className="nav-items">
@@ -52,13 +52,12 @@ const NavBar = () => {
             offset={0}
             duration={500}
           >
-            Request a Pack
+            Request a pack
           </Link>
         </li>
       </ul>
     </div>
-
-    )
-}
+  );
+};
 
 export default NavBar;

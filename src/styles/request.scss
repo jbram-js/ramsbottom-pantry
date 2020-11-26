@@ -1,0 +1,29 @@
+@import "../styles/variables.scss";
+
+input {
+  font-family: 'Rubik', sans-serif;
+  width: 600px;
+}
+textarea {
+  font-family: 'Rubik', sans-serif;
+  height: 6em;
+  width: 600px;
+}
+div[role="alert"] {
+  color: $red;
+  margin-top: 1em;
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+}
+.status-message {
+  font-family: 'Rubik', sans-serif;
+  opacity: 0;
+}
+.success {
+  opacity: 1;
+  color: $green;
+}
+.failure {
+  opacity: 1;
+  color: $red;
+}

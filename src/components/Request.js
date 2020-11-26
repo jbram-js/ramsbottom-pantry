@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { animateScroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleUp } from "@fortawesome/free-solid-svg-icons";
-import "../styles/Request.css";
 import { init, sendForm } from "emailjs-com";
 init("user_VKy9wYkpvTzoPw85OauWg");
 
