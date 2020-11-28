@@ -3,7 +3,7 @@ import About from "./About";
 import Contact from "./Request.js";
 import Request from "./Contact.js";
 import WhatWeNeed from "./WhatWeNeed.js";
-import "../styles/controller.scss";
+import "../styles/Controller.scss";
 
 function App() {
   return (
