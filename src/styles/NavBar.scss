@@ -2,44 +2,35 @@
 
 .nav {
     width: 100%;
-    min-height: 6vh;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #eee;
-    transition: all .7s ease-in;
-}
-
-//IMPORTANT
-.scrolled{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: lightblue;
+    background-color: #fff;
+    padding: 10px 0 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+	top: 0;
 }
 
 .left {
     flex: 1;
     display: flex;
     justify-content: center;
-    background: #ffcdd2;
 }
 
 .middle {
     flex: 3;
-    background: #bbdefb;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .right {
     flex: 1;
-    background: #fff9c4;
 }
 
 .logo {
     width: 200px;
-    height: 200px;
+    height: 75px;
 }
 
 .nav-list, .social-links {
@@ -48,19 +39,35 @@
 
 .nav-items {
     font-size: 24px;
-    padding: 30px;
+    color: #F1897F;
+    padding: 0 60px 0 0;
     display: inline-block;
+    cursor: pointer;
+}
+
+.nav-items::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #FCE483;
+  transition: width 0.3s;
+}
+
+.nav-items:hover::after {
+  width: 100%;
+  transition: width 0.3s;
 }
 
 .social-links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 0 0 10px;
 }
 
 .icons {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 
