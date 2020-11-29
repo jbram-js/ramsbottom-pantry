@@ -58,6 +58,7 @@ const Request = () => {
             </div>
           )}
           <input
+            className="left-form"
             type="text"
             name="name"
             aria-invalid={errors.name ? "true" : "false"}
@@ -72,6 +73,7 @@ const Request = () => {
             </div>
           )}
           <input
+            className="right-form"
             type="number"
             name="phone_number"
             aria-invalid={errors.contact_number ? "true" : "false"}
@@ -87,6 +89,7 @@ const Request = () => {
               </div>
             )}
           <input
+            className="left-form"
             type="number"
             name="number_of_adults"
             aria-invalid={errors.number_of_adults ? "true" : "false"}
@@ -102,6 +105,7 @@ const Request = () => {
               </div>
             )}
           <input
+            className="right-form"
             type="number"
             name="number_of_children"
             aria-invalid={errors.number_of_children ? "true" : "false"}
@@ -116,6 +120,7 @@ const Request = () => {
             </div>
           )}
           <input
+            className="left-form"
             type="text"
             name="address"
             aria-invalid={errors.address ? "true" : "false"}
@@ -130,6 +135,7 @@ const Request = () => {
             </div>
           )}
           <input
+            className="right-form"
             type="text"
             name="town"
             aria-invalid={errors.town ? "true" : "false"}
@@ -144,6 +150,7 @@ const Request = () => {
             </div>
           )}
           <input
+            className="left-form"
             type="text"
             name="postcode"
             aria-invalid={errors.postcode ? "true" : "false"}
@@ -151,7 +158,9 @@ const Request = () => {
             placeholder="Postcode"
           />
           <br />
-          <textarea
+          <input
+            className="right-form"
+            type="text"
             name="message"
             maxLength="300"
             ref={register}
@@ -159,7 +168,7 @@ const Request = () => {
           />
           <br />
           <input type="hidden" name="contact_number" value={contactNumber} />
-          <input type="submit" value="Send" />
+          <input className="button" type="submit" value="Send" />
         </form>
       </div>
       <div className="right-request">

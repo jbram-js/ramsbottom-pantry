@@ -26,14 +26,49 @@
 }
 
 input {
-  font-family: 'Rubik', sans-serif;
-  width: 600px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid $pink;
+    padding: 10px 0 10px 10px;
+    margin: 0 0 20px 0;
+    outline: none;
 }
-textarea {
-  font-family: 'Rubik', sans-serif;
-  height: 6em;
-  width: 600px;
+
+.left-form {
+    display:block;
+    float:left;
+    line-height:40px;
+    width:48%;
+    height:30px;
 }
+
+.right-form {
+    position: relative;
+    top: -19px;
+    display:block;
+    float:right;
+    line-height:40px;
+    width:48%;
+    height:30px;
+}
+
+.button {
+  font-family: 'Rubik', sans-serif;
+  width: 15%;
+  font-size: 22px;
+  color: #000;
+  border: 2px solid $pink;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $pink;
+  color: #fff;
+}
+
 div[role="alert"] {
   color: $red;
   margin-top: 1em;
