@@ -1,0 +1,53 @@
+@import "../styles/variables.scss";
+
+.wwn {
+    display: flex;
+    align-items: center;
+}
+
+.left-wwn {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.right-wwn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.wwn-p {
+    font-size: 22px;
+    line-height: 40px;
+    text-align: justify;
+    margin-bottom: -10px;
+}
+
+.wwn-list {
+    margin-left: -40px;
+    list-style: none;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wwn-list-item {
+    color: #fff;
+    background-color: $pink;
+    opacity: 75%;
+    padding: 20px;
+    flex: 25%;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.food-image {
+    padding-top: 120px;
+    max-width: 75%;
+    max-height: 75%;
+}

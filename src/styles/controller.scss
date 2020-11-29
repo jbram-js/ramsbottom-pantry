@@ -1,15 +1,23 @@
 @import "./NavBar.scss";
+@import "./About.scss";
+@import "./WhatWeNeed.scss";
 @import "./Request.scss";
+@import "./Footer.scss";
 @import "./Variables.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 .App {
     font-family: 'Rubik', sans-serif;
-    background-color: #F49E9E;
     width: 100vw;
 }
 
 body {
     margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: #F1897F;
+    padding-top: 25px;
 }

@@ -1,8 +1,9 @@
 import NavBar from "./NavBar";
 import About from "./About";
-import Contact from "./Request.js";
-import Request from "./Contact.js";
-import WhatWeNeed from "./WhatWeNeed.js";
+import WhatWeNeed from "./WhatWeNeed";
+import Request from "./Request";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import "../styles/Controller.scss";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <WhatWeNeed />
       <Request />
       <Contact />
+      <Footer />
     </div>
   );
 }

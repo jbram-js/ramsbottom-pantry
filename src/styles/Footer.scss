@@ -1,0 +1,16 @@
+ @import "../styles/variables.scss";
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #efefef;
+    margin-top: 25px;
+    z-index: 99;
+}
+
+.scroll-button {
+    color: $pink;
+    cursor: pointer;
+}

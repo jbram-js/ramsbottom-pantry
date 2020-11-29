@@ -1,25 +1,34 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 import logo from "../images/rp_logo.svg";
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
 
 const NavBar = () => {
+  const handleScrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <div className="nav">
       <div className="left">
-        <img src={logo} alt="Ramsbottom Pantry logo" className="logo" />
+        <img
+          src={logo}
+          alt="Ramsbottom Pantry logo"
+          className="logo"
+          onClick={() => handleScrollToTop()}
+        />
       </div>
       <div className="middle">
         <ul className="nav-list">
           <li className="nav-items">
             <Link
               activeClass="active"
-              to="About"
+              to="about"
               spy={true}
               smooth={true}
-              offset={-50}
+              offset={-75}
               duration={500}
             >
               About us
@@ -28,13 +37,25 @@ const NavBar = () => {
           <li className="nav-items">
             <Link
               activeClass="active"
-              to="WhatWeNeed"
+              to="wwn"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-75}
               duration={500}
             >
               What we need
+            </Link>
+          </li>
+          <li className="nav-items">
+            <Link
+              activeClass="active"
+              to="request"
+              spy={true}
+              smooth={true}
+              offset={-75}
+              duration={500}
+            >
+              Request a pack
             </Link>
           </li>
           <li className="nav-items">
@@ -47,18 +68,6 @@ const NavBar = () => {
               duration={500}
             >
               Contact us
-            </Link>
-          </li>
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="Request"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Request a pack
             </Link>
           </li>
         </ul>

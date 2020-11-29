@@ -1,4 +1,4 @@
-
+@import "../styles/variables.scss";
 
 .nav {
     width: 100%;
@@ -9,7 +9,8 @@
     padding: 10px 0 10px 0;
     position: -webkit-sticky;
     position: sticky;
-	top: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .left {
@@ -31,6 +32,7 @@
 .logo {
     width: 200px;
     height: 75px;
+    cursor: pointer;
 }
 
 .nav-list, .social-links {
@@ -38,8 +40,8 @@
 }
 
 .nav-items {
-    font-size: 24px;
-    color: #F1897F;
+    font-size: 26px;
+    color: $pink;
     padding: 0 60px 0 0;
     display: inline-block;
     cursor: pointer;
@@ -50,7 +52,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background-color: #FCE483;
+  background-color: $pink;
   transition: width 0.3s;
 }
 
