@@ -3,6 +3,7 @@
 .request {
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 
 .left-request {
@@ -39,7 +40,7 @@ input {
     display:block;
     float:left;
     line-height:40px;
-    width:48%;
+    width:45%;
     height:30px;
 }
 
@@ -49,7 +50,7 @@ input {
     display:block;
     float:right;
     line-height:40px;
-    width:48%;
+    width:45%;
     height:30px;
 }
 

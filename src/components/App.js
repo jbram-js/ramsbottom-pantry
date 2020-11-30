@@ -8,7 +8,7 @@ import "../styles/Controller.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <NavBar />
       <About />
       <WhatWeNeed />
