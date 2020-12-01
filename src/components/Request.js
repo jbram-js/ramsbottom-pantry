@@ -49,6 +49,8 @@ const Request = () => {
           Once the request has been submitted a member of the Ramsbottom Pantry
           team will be in contact to arrange delivery/collection.
         </p>
+        <p className="required-p">* = required field</p>
+
         <p className="status-message">{statusMessage}</p>
         <form id="form" onSubmit={handleSubmit(onSubmit)}>
           {errors.name && errors.name.type === "required" && (
@@ -63,7 +65,7 @@ const Request = () => {
             name="name"
             aria-invalid={errors.name ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Name"
+            placeholder="Name *"
           />
           <br />
           {errors.phone_number && errors.phone_number.type === "required" && (
@@ -78,7 +80,7 @@ const Request = () => {
             name="phone_number"
             aria-invalid={errors.contact_number ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Phone number"
+            placeholder="Phone number *"
           />
           <br />
           {errors.number_of_adults &&
@@ -94,7 +96,7 @@ const Request = () => {
             name="number_of_adults"
             aria-invalid={errors.number_of_adults ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Number of adults"
+            placeholder="Number of adults *"
           />
           <br />
           {errors.number_of_children &&
@@ -110,7 +112,7 @@ const Request = () => {
             name="number_of_children"
             aria-invalid={errors.number_of_children ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Number of children"
+            placeholder="Number of children *"
           />
           <br />
           {errors.address && errors.address.type === "required" && (
@@ -125,7 +127,7 @@ const Request = () => {
             name="address"
             aria-invalid={errors.address ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Address"
+            placeholder="Address *"
           />
           <br />
           {errors.town && errors.town.type === "required" && (
@@ -137,10 +139,10 @@ const Request = () => {
           <input
             className="right-form"
             type="text"
-            name="town"
+            name="town *"
             aria-invalid={errors.town ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Town"
+            placeholder="Town *"
           />
           <br />
           {errors.postcode && errors.postcode.type === "required" && (
@@ -155,7 +157,7 @@ const Request = () => {
             name="postcode"
             aria-invalid={errors.postcode ? "true" : "false"}
             ref={register({ required: true })}
-            placeholder="Postcode"
+            placeholder="Postcode *"
           />
           <br />
           <input
@@ -164,7 +166,7 @@ const Request = () => {
             name="message"
             maxLength="300"
             ref={register}
-            placeholder="Allergies, dietary requirements, comments..."
+            placeholder="Allergies, dietary requirements, pets..."
           />
           <br />
           <input type="hidden" name="contact_number" value={contactNumber} />
