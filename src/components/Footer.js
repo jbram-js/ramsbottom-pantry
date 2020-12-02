@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer">
       <p>this is placeholder text.</p>
       <span className="scroll-button" onClick={() => handleScrollToTop()}>
-        <FontAwesomeIcon icon={faArrowAltCircleUp} size="3x" />
+        <FontAwesomeIcon icon={faArrowAltCircleUp} />
       </span>
     </div>
   );

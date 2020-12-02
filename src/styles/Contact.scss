@@ -4,6 +4,10 @@
     height: 100vh;
 }
 
+.contact h1 {
+    padding-bottom: 30px;
+}
+
 .left-contact {
     flex: 2;
     display: flex;
@@ -14,5 +18,32 @@
 .right-contact {
     flex: 1;
     display: flex;  
-    justify-content: center;
+    align-items: center;
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 140px;
+}
+
+.contact-list-items {
+    padding: 30px;
+    font-size: 22px;
+}
+
+.icons-contact {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    padding-right: 20px;
+}
+
+.contact a, .contact a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color:$pink;
 }

@@ -30,7 +30,7 @@ const MapContainer = () => {
   ];
 
   const mapStyles = {
-    height: "50vh",
+    height: "55vh",
     width: "90%",
   };
 
