@@ -43,24 +43,6 @@ input {
     outline: none;
 }
 
-.left-form {
-    display:block;
-    float:left;
-    line-height:40px;
-    width:45%;
-    height:30px;
-}
-
-.right-form {
-    position: relative;
-    top: -19px;
-    display:block;
-    float:right;
-    line-height:40px;
-    width:45%;
-    height:30px;
-}
-
 .button {
   font-family: 'Rubik', sans-serif;
   width: 15%;
@@ -77,24 +59,46 @@ input {
   color: #fff;
 }
 
-div[role="alert"] {
-  color: $red;
-  margin-top: 1em;
-  font-family: 'Rubik', sans-serif;
-  font-style: italic;
-}
 .status-message {
   font-family: 'Rubik', sans-serif;
   opacity: 0;
 }
+
+.left-form {
+    display:block;
+    float:left;
+    line-height:40px;
+    width:45%;
+    height:30px;
+}
+
+.right-form {
+    position: relative;
+    display:block;
+    float:right;
+    line-height:40px;
+    width:45%;
+    height:30px;
+}
+
 .success {
   opacity: 1;
-  color: $green;
+  color: #000;
+  background: #f4fef4; 
+  font-size: 22px;
+  padding: 6px 16px 6px 16px;
+  text-align: center;
 }
+
 .failure {
   opacity: 1;
-  color: $red;
+  color: #000;
+  background: #ffe5e5; 
+  font-size: 22px;
+  padding: 6px 16px 6px 16px;
+  text-align: center;
 }
+ 
 
 .pack-image {
     padding-top: 120px;

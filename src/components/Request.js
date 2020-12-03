@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import pack from "../images/food3.jpg";
+import "../styles/Controller.scss";
 import { init, sendForm } from "emailjs-com";
 init("user_VKy9wYkpvTzoPw85OauWg");
 
@@ -13,7 +14,7 @@ const Request = () => {
     setContactNumber(numStr.substring(numStr.length - 6));
   };
 
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     const statusMessage = document.querySelector(".status-message");
     const form = document.querySelector("#contact-form");
@@ -43,126 +44,84 @@ const Request = () => {
   return (
     <div className="request">
       <div className="left-request">
-        <h1>Request a pack</h1>
+        <h1>Contact</h1>
         <p className="request-p">
           If you are in need of our help please fill in the request form below.
           Once the request has been submitted a member of the Ramsbottom Pantry
           team will be in contact to arrange delivery/collection.
         </p>
-        <p className="required-p">* = required field</p>
-
         <p className="status-message">{statusMessage}</p>
-        <form id="form" onSubmit={handleSubmit(onSubmit)}>
-          {errors.name && errors.name.type === "required" && (
-            <div role="alert">
-              Name is required
-              <br />
-            </div>
-          )}
+        <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
           <input
             className="left-form"
             type="text"
             name="name"
-            aria-invalid={errors.name ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Name *"
+            required={true}
+            ref={register}
+            placeholder="Name"
           />
-          <br />
-          {errors.phone_number && errors.phone_number.type === "required" && (
-            <div role="alert">
-              Phone number is required
-              <br />
-            </div>
-          )}
+
           <input
             className="right-form"
             type="number"
             name="phone_number"
-            aria-invalid={errors.contact_number ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Phone number *"
+            required={true}
+            ref={register}
+            placeholder="Phone number"
           />
           <br />
-          {errors.number_of_adults &&
-            errors.number_of_adults.type === "required" && (
-              <div role="alert">
-                Number of adults is required
-                <br />
-              </div>
-            )}
+
           <input
             className="left-form"
             type="number"
             name="number_of_adults"
-            aria-invalid={errors.number_of_adults ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Number of adults *"
+            required={true}
+            ref={register}
+            placeholder="Number of adults"
           />
           <br />
-          {errors.number_of_children &&
-            errors.number_of_children.type === "required" && (
-              <div role="alert">
-                Number of children is required
-                <br />
-              </div>
-            )}
+
           <input
             className="right-form"
             type="number"
             name="number_of_children"
-            aria-invalid={errors.number_of_children ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Number of children *"
+            required={true}
+            ref={register}
+            placeholder="Number of children"
           />
           <br />
-          {errors.address && errors.address.type === "required" && (
-            <div role="alert">
-              Address is required
-              <br />
-            </div>
-          )}
+
           <input
             className="left-form"
             type="text"
             name="address"
-            aria-invalid={errors.address ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Address *"
+            required={true}
+            ref={register}
+            placeholder="Address"
           />
           <br />
-          {errors.town && errors.town.type === "required" && (
-            <div role="alert">
-              Town is required
-              <br />
-            </div>
-          )}
+
           <input
             className="right-form"
             type="text"
-            name="town *"
-            aria-invalid={errors.town ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Town *"
+            name="town"
+            required={true}
+            ref={register}
+            placeholder="Town"
           />
           <br />
-          {errors.postcode && errors.postcode.type === "required" && (
-            <div role="alert">
-              Postcode is required
-              <br />
-            </div>
-          )}
+
           <input
             className="left-form"
             type="text"
             name="postcode"
-            aria-invalid={errors.postcode ? "true" : "false"}
-            ref={register({ required: true })}
-            placeholder="Postcode *"
+            required={true}
+            ref={register}
+            placeholder="Postcode"
           />
           <br />
           <input
             className="right-form"
-            type="text"
             name="message"
             maxLength="300"
             ref={register}
@@ -174,11 +133,7 @@ const Request = () => {
         </form>
       </div>
       <div className="right-request">
-        <img
-          src={pack}
-          alt="Image of a pack being made"
-          className="pack-image"
-        />
+        <img src={pack} alt="" className="pack-image" />
       </div>
     </div>
   );
