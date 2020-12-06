@@ -20,17 +20,12 @@
 }
 
 .request-p {
-    font-size: 22px;
     line-height: 40px;
     text-align: justify;
 }
 
-.required-p {
-    font-size: 20px;
-    font-style: italic;
-    line-height: 40px;
-    text-align: justify;
-    margin-bottom: -20px;
+.postcode {
+  color: $pink;
 }
 
 input {
@@ -85,7 +80,6 @@ input {
   opacity: 1;
   color: #000;
   background: #f4fef4; 
-  font-size: 22px;
   padding: 6px 16px 6px 16px;
   text-align: center;
 }
@@ -94,11 +88,9 @@ input {
   opacity: 1;
   color: #000;
   background: #ffe5e5; 
-  font-size: 22px;
   padding: 6px 16px 6px 16px;
   text-align: center;
 }
- 
 
 .pack-image {
     padding-top: 120px;

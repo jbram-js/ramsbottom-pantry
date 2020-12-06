@@ -44,11 +44,13 @@ const Request = () => {
   return (
     <div className="request">
       <div className="left-request">
-        <h1>Contact</h1>
+        <h1>Request a pack</h1>
         <p className="request-p">
           If you are in need of our help please fill in the request form below.
-          Once the request has been submitted a member of the Ramsbottom Pantry
-          team will be in contact to arrange delivery/collection.
+          We currently cover address in{" "}
+          <span className="postcode">BL0, BL8 & BL9 postcodes</span>. Once the
+          request has been submitted a member of the Ramsbottom Pantry team will
+          be in contact to arrange delivery/collection.
         </p>
         <p className="status-message">{statusMessage}</p>
         <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
@@ -58,7 +60,7 @@ const Request = () => {
             name="name"
             required={true}
             ref={register}
-            placeholder="Name"
+            placeholder="Name *"
           />
 
           <input
@@ -67,7 +69,7 @@ const Request = () => {
             name="phone_number"
             required={true}
             ref={register}
-            placeholder="Phone number"
+            placeholder="Phone number *"
           />
           <br />
 
@@ -77,7 +79,7 @@ const Request = () => {
             name="number_of_adults"
             required={true}
             ref={register}
-            placeholder="Number of adults"
+            placeholder="Number of adults *"
           />
           <br />
 
@@ -87,7 +89,7 @@ const Request = () => {
             name="number_of_children"
             required={true}
             ref={register}
-            placeholder="Number of children"
+            placeholder="Number of children *"
           />
           <br />
 
@@ -97,7 +99,7 @@ const Request = () => {
             name="address"
             required={true}
             ref={register}
-            placeholder="Address"
+            placeholder="Address *"
           />
           <br />
 
@@ -107,7 +109,7 @@ const Request = () => {
             name="town"
             required={true}
             ref={register}
-            placeholder="Town"
+            placeholder="Town *"
           />
           <br />
 
@@ -117,7 +119,7 @@ const Request = () => {
             name="postcode"
             required={true}
             ref={register}
-            placeholder="Postcode"
+            placeholder="Postcode *"
           />
           <br />
           <input

@@ -10,7 +10,13 @@ const Footer = () => {
   };
   return (
     <div className="footer">
-      <p>this is placeholder text.</p>
+      <p className="footer-p">
+        Created by{" "}
+        <a href="https://github.com/jbram-js" target="_blank" className="bram">
+          Bram
+        </a>
+      </p>
+
       <span className="scroll-button" onClick={() => handleScrollToTop()}>
         <FontAwesomeIcon icon={faArrowAltCircleUp} />
       </span>

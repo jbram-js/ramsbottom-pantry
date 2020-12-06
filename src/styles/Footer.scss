@@ -4,17 +4,30 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 12px;
+    padding: 10px;
     background-color: #efefef;
     margin-top: 25px;
     z-index: 99;
 }
 
+.footer-p {
+    margin-left: 15px;
+}
+
+.bram {
+    text-decoration: none;
+    color: $pink;
+    cursor: pointer;
+}
+
+.bram:visited {
+    color: $pink;
+}
 
 .scroll-button {
     color: $pink;
     cursor: pointer;
     font-size: 50px;
     vertical-align: middle;
-    padding-right: 10px;
+    padding: 7px 15px 0 0;
 }

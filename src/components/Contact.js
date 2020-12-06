@@ -4,13 +4,14 @@ import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
 import phone from "../images/call.svg";
+import email from "../images/email.svg";
 import "../styles/Controller.scss";
 
 const Contact = () => {
   return (
     <div className="contact">
       <div className="left-contact">
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
         <Map />
       </div>
       <div className="right-contact">
@@ -43,6 +44,12 @@ const Contact = () => {
             <a href="tel:+447710461761">
               <img src={phone} className="icons-contact" alt="Call" />
               <span>Give us a call</span>
+            </a>
+          </li>
+          <li className="contact-list-items">
+            <a href="mailto:ramsbottompantry@gmail.com">
+              <img src={email} className="icons-contact" alt="Email" />
+              <span>Drop us an email</span>
             </a>
           </li>
         </ul>
