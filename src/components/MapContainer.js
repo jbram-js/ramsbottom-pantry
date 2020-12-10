@@ -31,7 +31,7 @@ const MapContainer = () => {
 
   const mapStyles = {
     height: "55vh",
-    width: "90%",
+    width: "100%",
   };
 
   const defaultCenter = {

@@ -28,7 +28,7 @@ const NavBar = () => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-20}
+              offset={-50}
               duration={500}
             >
               About us
@@ -40,7 +40,7 @@ const NavBar = () => {
               to="wwn"
               spy={true}
               smooth={true}
-              offset={-20}
+              offset={-30}
               duration={500}
             >
               What we need
@@ -52,7 +52,7 @@ const NavBar = () => {
               to="request"
               spy={true}
               smooth={true}
-              offset={-20}
+              offset={-50}
               duration={500}
             >
               Request a pack
@@ -64,7 +64,7 @@ const NavBar = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-20}
+              offset={-60}
               duration={500}
             >
               Contact us
