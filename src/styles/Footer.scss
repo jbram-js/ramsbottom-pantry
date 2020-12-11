@@ -31,3 +31,22 @@
     vertical-align: middle;
     padding: 7px 15px 0 0;
 }
+
+@media (max-width: 800px) {
+    .footer {
+    margin-top: 250px;
+}
+
+.scroll-button {
+    font-size: 40px;
+}
+}
+
+@media (max-width: 500px) {
+    .footer {
+        margin-top: 200px;
+    }
+    .scroll-button {
+        font-size: 30px;
+    }
+}

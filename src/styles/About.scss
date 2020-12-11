@@ -55,6 +55,13 @@
  }
 }
 
+@media (max-width: 750px) {
+ 
+  .people-image {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 650px) {
    p, li {
      font-size: 16px;

@@ -73,3 +73,17 @@
 }
 
 }
+
+@media (max-width: 800px) {
+    .contact-list {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .icons-contact {
+        width: 35px;
+    height: 35px;
+    }
+}

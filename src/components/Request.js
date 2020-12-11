@@ -56,6 +56,7 @@ const Request = () => {
         <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
           <input
             className="left-form"
+            id="number"
             type="text"
             name="name"
             required={true}
@@ -65,6 +66,7 @@ const Request = () => {
 
           <input
             className="right-form"
+            id="number"
             type="number"
             name="phone_number"
             required={true}
