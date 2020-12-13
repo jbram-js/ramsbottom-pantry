@@ -75,8 +75,11 @@
  @media (max-width: 1459px) {
  .nav-items {
      font-size: 23px;
-     max-height: 200px;
  }
+
+.nav {
+    height: auto;
+}
 }
 
   @media (max-width: 1378px) {
