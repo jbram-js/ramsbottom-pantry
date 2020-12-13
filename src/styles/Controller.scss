@@ -18,6 +18,16 @@ body {
     margin: 0;
 }
 
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 h1 {
     font-size: 40px;
     color: $pink;
