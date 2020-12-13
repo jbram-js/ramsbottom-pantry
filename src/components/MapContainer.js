@@ -41,11 +41,7 @@ const MapContainer = () => {
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyDEn9zbKLIfawtRhXgWGZkPPz82chpgYII">
-      <GoogleMap
-        mapContainerStyle={mapStyles}
-        zoom={14.6}
-        center={defaultCenter}
-      >
+      <GoogleMap mapContainerStyle={mapStyles} zoom={12} center={defaultCenter}>
         {locations.map((item) => {
           return (
             <Marker
