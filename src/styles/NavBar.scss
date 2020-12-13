@@ -2,7 +2,6 @@
 
 .nav {
     width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,67 +128,77 @@
 }
 
  @media (max-width: 891px) {
- .nav {
-    flex-direction: column;
-     }
  .nav-items {
-     font-size: 18px;
+     font-size: 17px;
+     padding: 0 40px 0 0;
  }
 
 }
 
-  @media (max-width: 692px) {
+  @media (max-width: 787px) {
  .nav-items {
      font-size: 16px;
+     padding: 0 30px 0 0;
  }
    .logo {
     width: 125px;
 }
 }
 
-  @media (max-width: 650px) {
+  @media (max-width: 702px) {
  .nav-items {
-     font-size: 14px;
-     padding: 0 50px 0 0;
+     font-size: 15px;
+     
  }
 }
 
-  @media (max-width: 600px) {
+  @media (max-width: 659px) {
+ .nav-items {
+     font-size: 14px;
+     
+ }
+
+ .logo {
+     width: 100px;
+ }
+}
+
+ @media (max-width: 639px) {
+ .nav-items {
+     font-size: 13px;
+     
+ }
+ }
+  @media (max-width: 609px) {
    
  .nav-items {
      font-size: 12px;
+ }
+}
+
+@media (max-width: 581px) {
+    .left {
+        display: none;
+    }
+
+        .nav-items {
+       padding: 0 40px 0 0;
  }
 }
 
   @media (max-width: 560px) {
-   
- .nav-items {
+    .nav-items {
      font-size: 12px;
  }
 }
 
-@media (max-width: 560px) {
    
- .nav-items {
-     font-size: 12px;
- }
-}
 
-@media (max-width: 516px) {
-    .left {
-    }
-   
- .nav-items {
-     font-size: 12px;
-       padding: 0 40px 0 0;
- }
-}
 
 @media (max-width: 474px) {
    
  .nav-items {
      font-size: 11px;
-       padding: 0 40px 0 0;
  }
 }
 
