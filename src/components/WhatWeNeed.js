@@ -1,5 +1,6 @@
 import React from "react";
 import food from "../images/food4.jpg";
+import "../styles/Controller.scss";
 
 const WhatWeNeed = () => {
   return (

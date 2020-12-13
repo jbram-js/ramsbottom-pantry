@@ -4,6 +4,7 @@ import logo from "../images/rp_logo.svg";
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
+import "../styles/Controller.scss";
 
 const NavBar = () => {
   const handleScrollToTop = () => {
