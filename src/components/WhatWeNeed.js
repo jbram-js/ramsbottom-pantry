@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import food from "../images/food4.jpg";
 import "../styles/Controller.scss";
@@ -27,11 +28,7 @@ const WhatWeNeed = () => {
         </ul>
       </div>
       <div className="right-wwn">
-        <img
-          src={food}
-          alt="Example image of donations we require"
-          className="food-image"
-        />
+        <img src={food} className="food-image" />
       </div>
     </div>
   );

@@ -76,7 +76,11 @@ const NavBar = () => {
       <div className="right">
         <ul className="social-links">
           <li>
-            <a href="https://www.facebook.com/RamsbottomPantry" target="_blank">
+            <a
+              href="https://www.facebook.com/RamsbottomPantry"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               <img src={facebook} className="icons" alt="Facebook" />
             </a>
@@ -85,6 +89,7 @@ const NavBar = () => {
             <a
               href="https://www.instagram.com/ramsbottompantry/?igshid=cg47ldzp8d2d"
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <img src={instagram} className="icons" alt="Instagram" />
@@ -94,6 +99,7 @@ const NavBar = () => {
             <a
               href="https://www.gofundme.com/f/food-donations-ramsbottom?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all"
               target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <img src={gofundme} className="icons" alt="GoFundMe" />
