@@ -65,9 +65,28 @@ padding-top: 30px;
 }
 }
 
+@media (max-width: 891px) {
+  .left-wwn h1 {
+    padding-top: 80px;
+  }
+}
+
 @media (max-width: 750px) {
  
   .food-image {
     max-width: 100%;
   }
+}
+
+@media (max-width: 600px) {
+    .wwn-list-items {
+    padding-top: 5px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .wwn-list {
+        display: flex;
+        flex-direction: column;
+    }
 }

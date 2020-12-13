@@ -119,6 +119,12 @@ input {
 }
 }
 
+@media (max-width: 891px) {
+  .left-request h1 {
+    padding-top: 70px;
+  }
+}
+
 @media (max-width: 750px) {
  
   .pack-image {
@@ -162,8 +168,12 @@ input {
 }
 
 @media (max-width: 350px) {
+input {
+    font-size: 12px;
+  }
   .button {
     font-size: 13px;
     width: 25%;
   }
+  
 }

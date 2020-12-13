@@ -49,6 +49,12 @@
 
 }
 
+@media (max-width: 891px) {
+  .left-about h1 {
+    padding-top: 70px;
+  }
+}
+
 @media (max-width: 800px) {
   p, li {
      font-size: 18px;
@@ -60,6 +66,9 @@
   .people-image {
     max-width: 100%;
   }
+  .community {
+    margin: -40px 0 -40px 0;
+}
 }
 
 @media (max-width: 650px) {
