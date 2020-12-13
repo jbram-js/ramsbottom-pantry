@@ -48,9 +48,12 @@ const Request = () => {
         <p className="request-p">
           If you are in need of our help please fill in the request form below.
           We currently cover address in{" "}
-          <span className="postcode">BL0, BL8 & BL9 postcodes</span>. Once the
-          request has been submitted a member of the Ramsbottom Pantry team will
-          be in contact to arrange delivery/collection.
+          <span className="postcode">BL0, BL8 & BL9 postcodes</span>. We work in
+          conjunction with other food banks throughout Bury so may share your
+          details if there is a service closer to you. Submission of this
+          request form confirms your acceptance of these terms. Once the request
+          has been submitted a member of the Ramsbottom Pantry team will contact
+          you.
         </p>
         <p className="status-message">{statusMessage}</p>
         <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
