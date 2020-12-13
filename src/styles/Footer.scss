@@ -7,8 +7,6 @@
     padding: 10px;
     background-color: #efefef;
     margin-top: 25px;
-    position: sticky;
-    position: -webkit-sticky;
     z-index: 99;
 }
 
@@ -36,7 +34,7 @@
 
 @media (max-width: 800px) {
     .footer {
-    margin-top: 370px;
+    margin-top: 220px;
 }
 
 .scroll-button {
@@ -46,7 +44,7 @@
 
 @media (max-width: 500px) {
     .footer {
-        margin-top: 310px;
+        margin-top: 200px;
     }
     .scroll-button {
         font-size: 30px;
