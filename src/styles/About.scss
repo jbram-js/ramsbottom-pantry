@@ -53,6 +53,10 @@
   .left-about h1 {
     padding-top: 40px;
   }
+  .people-image {
+    max-width: 100%;
+    max-height: 55vh;
+  }
 }
 
 @media (max-width: 800px) {
@@ -63,10 +67,6 @@
 
 @media (max-width: 750px) {
  
-  .people-image {
-    max-width: 100%;
-    max-height: 55vh;
-  }
   .community {
     margin: -40px 0 -40px 0;
 }

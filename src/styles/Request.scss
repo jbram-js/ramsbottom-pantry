@@ -131,14 +131,15 @@ input {
   .left-request h1 {
     padding-top: 40px;
   }
+
+   .pack-image {
+    max-width: 100%;
+    max-height: 55vh;
+  }
 }
 
 @media (max-width: 750px) {
  
-  .pack-image {
-    max-width: 100%;
-    max-height: 55vh;
-  }
 
 .left-form {
   float: none;
