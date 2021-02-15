@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {
   GoogleMap,
   LoadScript,
@@ -14,14 +14,14 @@ const MapContainer = () => {
   };
   const locations = [
     {
-      name: "Wednesday 17:00 - 20:00 Saturday 09:00 - 12:00",
+      name: "Ramsbottom CC: Saturday 09:00 - 12:00",
       location: {
         lat: 53.645889,
         lng: -2.313441,
       },
     },
     {
-      name: "Tuesday & Thursday 12:00 - 16:00",
+      name: "Christ Church: Tuesday & Thursday 12:00 - 16:00",
       location: {
         lat: 53.652534,
         lng: -2.315703,

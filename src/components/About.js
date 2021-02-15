@@ -19,7 +19,8 @@ const About = () => {
           the local community to help those who need it.
           <br />
           <br />
-          2020 has been a year like no other, anybody can be in need of
+          The COVID-19 pandemic has brought unprecedented challenges to so many
+          peoples lives and has truly highlighted how anybody can be in need of
           emergency food at anytime. There is no 'type' of person. When a crisis
           hits we aim to bridge the gap and offer our support. Whether you have
           been furloughed, had your hours reduced, lost your job, waiting on a
