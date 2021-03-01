@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, animateScroll } from "react-scroll";
+import {Link, animateScroll} from "react-scroll";
 import logo from "../images/rp_logo.svg";
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
@@ -97,7 +97,7 @@ const NavBar = () => {
           </li>
           <li>
             <a
-              href="https://www.gofundme.com/f/food-donations-ramsbottom?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all"
+              href="https://www.gofundme.com/f/ramsbottom-pantry-food-bank?qid=3703310c60b9b3f29bab282f04722fbf"
               target="_blank"
               rel="noreferrer"
             >

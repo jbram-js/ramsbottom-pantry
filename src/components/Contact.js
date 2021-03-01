@@ -33,7 +33,7 @@ const Contact = () => {
           </li>
           <li className="contact-list-items">
             <a
-              href="https://www.gofundme.com/f/food-donations-ramsbottom?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all"
+              href="https://www.gofundme.com/f/ramsbottom-pantry-food-bank?qid=3703310c60b9b3f29bab282f04722fbf"
               target="_blank"
             >
               <img src={gofundme} className="icons-contact" alt="GoFundMe" />
