@@ -14,14 +14,7 @@ const MapContainer = () => {
   };
   const locations = [
     {
-      name: "Ramsbottom CC: Saturday 09:00 - 12:00",
-      location: {
-        lat: 53.645889,
-        lng: -2.313441,
-      },
-    },
-    {
-      name: "Christ Church: Tuesday & Thursday 12:00 - 16:00",
+      name: "Christchurch Ramsbottom",
       location: {
         lat: 53.652534,
         lng: -2.315703,

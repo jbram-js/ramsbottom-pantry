@@ -1,78 +1,88 @@
 .contact {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .contact h1 {
-    padding-bottom: 30px;
+  padding-bottom: 8px;
 }
 
 .left-contact {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px;
-    margin-left: 30px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  margin-left: 30px;
 }
 
 .right-contact {
-    flex: 1;
-    display: flex;  
-    align-items: center;
-    margin-left: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.contact-p {
+  line-height: 40px;
+  text-align: justify;
 }
 
 .contact-list {
-    list-style: none;
+  list-style: none;
 }
 
 .contact-list-items {
-    padding: 30px;
+  padding: 30px;
 }
 
 .icons-contact {
-    vertical-align: middle;
-    width: 45px;
-    height: 45px;
-    padding-right: 20px;
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  padding-right: 20px;
 }
 
-.contact a, .contact a:visited {
-    text-decoration: none;
-    color: #000;
+.contact a,
+.contact a:visited {
+  text-decoration: none;
+  color: #000;
 }
 
 .contact a:hover {
-    text-decoration: none;
-    color:$pink;
+  text-decoration: none;
+  color: $pink;
 }
 
 @media (max-width: 1200px) {
-.contact {
+  .contact {
     flex-direction: column;
-}
+  }
 
-.left-contact {
+  .left-contact {
     margin-left: 0;
     padding-top: 20px;
-}
-.left-contact h1 {
+  }
+  .left-contact h1 {
     margin-left: 30px;
-}
-.contact-list {
+  }
+  .contact-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-}
-.contact-list-items {
-   padding-left: 0;
-}
-.right-contact {
+  }
+  .contact-p {
+    line-height: 40px;
+    text-align: justify;
+    margin: 0 30px 20px 30px;
+  }
+  .contact-list-items {
+    padding-left: 0;
+  }
+  .right-contact {
     margin-left: 0;
-}
-
+  }
 }
 
 @media (max-width: 891px) {
@@ -82,22 +92,22 @@
 }
 
 @media (max-width: 800px) {
-    .contact-list {
-        flex-direction: column;
-        align-content: center;
-    }
-    .left-contact {
-        order: 0;
-    }
-    .right-contact {
-        padding-top: 120px;
-        order: 1;
-    }
+  .contact-list {
+    flex-direction: column;
+    align-content: center;
+  }
+  .left-contact {
+    order: 0;
+  }
+  .right-contact {
+    padding-top: 80px;
+    order: 1;
+  }
 }
 
 @media (max-width: 500px) {
-    .icons-contact {
-        width: 35px;
+  .icons-contact {
+    width: 35px;
     height: 35px;
-    }
+  }
 }

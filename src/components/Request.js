@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import React, {useState} from "react";
+import {useForm} from "react-hook-form";
 import pack from "../images/food3.jpg";
 import "../styles/Controller.scss";
-import { init, sendForm } from "emailjs-com";
+import {init, sendForm} from "emailjs-com";
 init("user_VKy9wYkpvTzoPw85OauWg");
 
 const Request = () => {
@@ -14,7 +14,7 @@ const Request = () => {
     setContactNumber(numStr.substring(numStr.length - 6));
   };
 
-  const { register, handleSubmit } = useForm();
+  const {register, handleSubmit} = useForm();
   const onSubmit = (data) => {
     const statusMessage = document.querySelector(".status-message");
     const form = document.querySelector("#contact-form");
