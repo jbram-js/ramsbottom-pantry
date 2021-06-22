@@ -13,8 +13,8 @@ const Contact = () => {
       <div className="left-contact">
         <h1>Contact us</h1>
         <p className="contact-p">
-          Our unit is located within the carpark of Christ Church Ramsbottom.
-          Our full address is{" "}
+          Ramsbottom Pantry is located within the carpark of Christ Church
+          Ramsbottom. Our full address is{" "}
           <span className="postcode">
             Ramsbottom Pantry, Christ Church, Great Eaves Road, Ramsbottom,
             Bury, BL0 0PX
