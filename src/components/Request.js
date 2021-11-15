@@ -46,6 +46,9 @@ const Request = () => {
       <div className="left-request">
         <h1>Request a pack</h1>
         <p className="request-p">
+          As mentioned above, for just £3 a week users can come down to the
+          pantry for a 'shop'. <br />
+          <br />
           If you are in need of our help please fill in the request form below.
           We currently cover address in{" "}
           <span className="postcode">BL0, BL8 & BL9 postcodes</span>. We work in

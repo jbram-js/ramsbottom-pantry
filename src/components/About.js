@@ -13,6 +13,19 @@ const About = () => {
           className="community"
         />
         <p className="about-p">
+          <b>
+            PLEASE SUPPORT OUR CROWDFUNDER BY FOLLOWING THE LINK{" "}
+            <a
+              href="https://www.facebook.com/RamsbottomPantry"
+              target="_blank"
+              alt="Crowdfunder"
+            >
+              HERE
+            </a>
+            . THE FUNDING WILL REALLY MAKE A DIFFERENCE TO PEOPLES LIVES.
+          </b>
+          <br />
+          <br />
           We are a voluntary food pantry based in Ramsbottom. Our function is to
           be the arms that reach out to the community directly. We are a
           completely donation driven food pantry who rely on the generosity of
@@ -26,6 +39,12 @@ const About = () => {
           been furloughed, had your hours reduced, lost your job, waiting on a
           Universal Credit payment or had unexpected additional expenses we are
           here to help.
+          <br />
+          <br />
+          For just £3 a week user can come down to the pantry and select food,
+          drink and sanitary items they wish from the categories outlined. We
+          are open Tuesdays & Thursdays between 12-3 down at Christ Church
+          Ramsbottom.
         </p>
       </div>
       <div className="right-about">

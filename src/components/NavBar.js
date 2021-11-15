@@ -4,6 +4,7 @@ import logo from "../images/rp_logo.svg";
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
+import crowdfunder from "../images/crowdfunder.png";
 import "../styles/Controller.scss";
 
 const NavBar = () => {
@@ -103,6 +104,16 @@ const NavBar = () => {
             >
               {" "}
               <img src={gofundme} className="icons" alt="GoFundMe" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/RamsbottomPantry"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img src={crowdfunder} className="icons" alt="Crowdfunder" />
             </a>
           </li>
         </ul>
