@@ -42,7 +42,10 @@ const Contact = () => {
             </a>
           </li>
           <li className="contact-list-items">
-            <a href="https://www.facebook.com/RamsbottomPantry" target="_blank">
+            <a
+              href="https://www.crowdfunder.co.uk/ramsbottompantry"
+              target="_blank"
+            >
               <img
                 src={crowdfunder}
                 className="icons-contact"

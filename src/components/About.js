@@ -16,7 +16,7 @@ const About = () => {
           <b>
             PLEASE SUPPORT OUR CROWDFUNDER BY FOLLOWING THE LINK{" "}
             <a
-              href="https://www.facebook.com/RamsbottomPantry"
+              href="https://www.crowdfunder.co.uk/ramsbottompantry"
               target="_blank"
               alt="Crowdfunder"
             >

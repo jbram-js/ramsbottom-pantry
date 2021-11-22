@@ -29,10 +29,11 @@
 
 .contact-list {
   list-style: none;
+  padding-top: 20px;
 }
 
 .contact-list-items {
-  padding: 30px;
+  padding: 25px;
 }
 
 .icons-contact {
@@ -95,12 +96,13 @@
   .contact-list {
     flex-direction: column;
     align-content: center;
+    padding-top: 0px;
   }
   .left-contact {
     order: 0;
   }
   .right-contact {
-    padding-top: 80px;
+    padding-top: 30px;
     order: 1;
   }
 }
