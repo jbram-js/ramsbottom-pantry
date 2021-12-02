@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import Landing from "./Landing";
+import News from "./News";
 import About from "./About";
 import WhatWeNeed from "./WhatWeNeed";
 import Request from "./Request";
@@ -12,6 +13,7 @@ function App() {
     <div className="app">
       <NavBar />
       <Landing />
+      <News />
       <About />
       <WhatWeNeed />
       <Request />
