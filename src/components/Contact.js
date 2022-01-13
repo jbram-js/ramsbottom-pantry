@@ -5,7 +5,6 @@ import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
 import phone from "../images/call.svg";
 import email from "../images/email.svg";
-import crowdfunder from "../images/crowdfunder.png";
 import "../styles/Controller.scss";
 
 const Contact = () => {
@@ -41,19 +40,7 @@ const Contact = () => {
               <span>Follow us on Instagram</span>
             </a>
           </li>
-          <li className="contact-list-items">
-            <a
-              href="https://www.crowdfunder.co.uk/ramsbottompantry"
-              target="_blank"
-            >
-              <img
-                src={crowdfunder}
-                className="icons-contact"
-                alt="Crowdfunder"
-              />
-              <span>Support our Crowdfunder</span>
-            </a>
-          </li>
+
           <li className="contact-list-items">
             <a
               href="https://www.gofundme.com/f/ramsbottom-pantry-food-bank?qid=3703310c60b9b3f29bab282f04722fbf"
