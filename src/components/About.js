@@ -13,19 +13,6 @@ const About = () => {
           className="community"
         />
         <p className="about-p">
-          <b>
-            PLEASE SUPPORT OUR CROWDFUNDER BY FOLLOWING THE LINK{" "}
-            <a
-              href="https://www.crowdfunder.co.uk/ramsbottompantry"
-              target="_blank"
-              alt="Crowdfunder"
-            >
-              HERE
-            </a>
-            . THE FUNDING WILL REALLY MAKE A DIFFERENCE TO PEOPLES LIVES.
-          </b>
-          <br />
-          <br />
           We are a voluntary food pantry based in Ramsbottom. Our function is to
           be the arms that reach out to the community directly. We are a
           completely donation driven food pantry who rely on the generosity of

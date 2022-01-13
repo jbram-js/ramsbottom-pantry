@@ -4,7 +4,6 @@ import logo from "../images/rp_logo.svg";
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
-import crowdfunder from "../images/crowdfunder.png";
 import "../styles/Controller.scss";
 
 const NavBar = () => {
@@ -24,18 +23,7 @@ const NavBar = () => {
       </div>
       <div className="middle">
         <ul className="nav-list">
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="news"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              News
-            </Link>
-          </li>
+          <li className="nav-items"></li>
           <li className="nav-items">
             <Link
               activeClass="active"
@@ -116,16 +104,6 @@ const NavBar = () => {
             >
               {" "}
               <img src={gofundme} className="icons" alt="GoFundMe" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.crowdfunder.co.uk/ramsbottompantry"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <img src={crowdfunder} className="icons" alt="Crowdfunder" />
             </a>
           </li>
         </ul>
