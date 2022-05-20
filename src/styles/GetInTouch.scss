@@ -1,0 +1,142 @@
+@import "../styles/Variables.scss";
+
+.request {
+  display: flex;
+  align-items: center;
+}
+
+.left-request {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-request {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.request-p {
+  text-align: left;
+}
+
+.postcode {
+  color: $pink;
+}
+
+input {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid $pink;
+  padding: 20px 0 10px 0;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  width: 75vw;
+  margin-left: 2vw;
+}
+
+.button {
+  font-family: "Rubik", sans-serif;
+  width: 20%;
+  height: auto;
+  font-size: 20px;
+  color: #000;
+  border: 2px solid $pink;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.button:hover {
+  background-color: $pink;
+  color: #fff;
+}
+
+.status-message {
+  font-family: "Rubik", sans-serif;
+  opacity: 0;
+}
+
+.success {
+  opacity: 1;
+  color: #000;
+  background: #f4fef4;
+  padding: 6px 16px 6px 16px;
+  text-align: center;
+}
+
+.failure {
+  opacity: 1;
+  color: #000;
+  background: #ffe5e5;
+  padding: 6px 16px 6px 16px;
+  text-align: center;
+}
+
+.pack-image {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+}
+
+@media (max-width: 1280px) {
+  .left-request h1 {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .request {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 891px) {
+  .left-request h1 {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .button {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 500px) {
+  .button,
+  input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  input {
+    font-size: 12px;
+  }
+  .button {
+    font-size: 13px;
+  }
+}

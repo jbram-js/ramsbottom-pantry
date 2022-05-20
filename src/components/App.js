@@ -1,21 +1,24 @@
+import React from "react";
+import {Routes, Route} from "react-router-dom";
 import NavBar from "./NavBar";
-import Landing from "./Landing";
 import About from "./About";
 import WhatWeNeed from "./WhatWeNeed";
-import Request from "./Request";
+import GetInTouch from "./GetInTouch";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import "../styles/Controller.scss";
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
       <NavBar />
-      <Landing />
-      <About />
-      <WhatWeNeed />
-      <Request />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<About />} />
+        <Route path="/what-we-need" element={<WhatWeNeed />} />
+        <Route path="/get-in-touch" element={<GetInTouch />} />
+        <Route path="/our-links" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
   );

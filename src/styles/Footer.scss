@@ -1,54 +1,19 @@
- @import "../styles/Variables.scss";
+@import "../styles/Variables.scss";
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #efefef;
-    margin-top: 25px;
-    z-index: 99;
-    position: fixed;
-    position: -webkit-fixed;
+  background-color: $light-pink;
+  position: absolute;
+  padding: 2px 0 16px 0;
+  height: 6vh;
+  margin-top: 50px;
+  text-align: left;
+  width: 100vw;
 }
 
-.footer-p {
-    margin-left: 15px;
-}
-
-.bram {
-    text-decoration: none;
-    color: $pink;
-    cursor: pointer;
-}
-
-.bram:visited {
-    color: $pink;
-}
-
-.scroll-button {
-    color: $pink;
-    cursor: pointer;
-    font-size: 50px;
-    vertical-align: middle;
-    padding: 7px 15px 0 0;
-}
-
-@media (max-width: 800px) {
-    .footer {
-    margin-top: 190px;
-}
-
-.scroll-button {
-    font-size: 40px;
-}
-}
-
-@media (max-width: 500px) {
-    .footer {
-        margin-top: 170px;
-    }
-    .scroll-button {
-        font-size: 30px;
-    }
+.footer a,
+.footer a:visited,
+.footer a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }

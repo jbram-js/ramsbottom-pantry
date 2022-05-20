@@ -5,7 +5,7 @@ import "../styles/Controller.scss";
 import {init, sendForm} from "emailjs-com";
 init("user_VKy9wYkpvTzoPw85OauWg");
 
-const Request = () => {
+const GetInTouch = () => {
   const [contactNumber, setContactNumber] = useState("000000");
   const [statusMessage, setStatusMessage] = useState("Message");
 
@@ -44,24 +44,26 @@ const Request = () => {
   return (
     <div className="request">
       <div className="left-request">
-        <h1>Request a pack</h1>
+        <img src={pack} alt="" className="pack-image" />
+        <h1>Get in touch</h1>
+
         <p className="request-p">
-          As mentioned above, for just £3 a week users can come down to the
-          pantry for a 'shop'. <br />
+          For just £3 a week users can come down to the pantry on a Tuesday &
+          Thursday for a 'shop'. <br />
           <br />
-          If you are in need of our help please fill in the request form below.
-          We currently cover address in{" "}
-          <span className="postcode">BL0, BL8 & BL9 postcodes</span>. We work in
-          conjunction with other food banks throughout Bury so may share your
-          details if there is a service closer to you. Submission of this
-          request form confirms your acceptance of these terms. Once the request
-          has been submitted a member of the Ramsbottom Pantry team will contact
-          you.
+          If you would like any more information or to speak to a member of our
+          team please complete the contact form below. A member of our team will
+          get back to you as quickly as possible. Alternatively, you can get in
+          touch through our social channels, phone and email. All links can be
+          found through the Our links page.
         </p>
         <p className="status-message">{statusMessage}</p>
-        <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          id="contact-form"
+          className="contact-form"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <input
-            className="left-form"
             id="number"
             type="text"
             name="name"
@@ -71,7 +73,6 @@ const Request = () => {
           />
 
           <input
-            className="right-form"
             id="number"
             type="number"
             name="phone_number"
@@ -82,71 +83,28 @@ const Request = () => {
           <br />
 
           <input
-            className="left-form"
-            type="number"
-            name="number_of_adults"
-            required={true}
-            ref={register}
-            placeholder="Number of adults *"
-          />
-          <br />
-
-          <input
-            className="right-form"
-            type="number"
-            name="number_of_children"
-            required={true}
-            ref={register}
-            placeholder="Number of children *"
-          />
-          <br />
-
-          <input
-            className="left-form"
-            type="text"
-            name="address"
-            required={true}
-            ref={register}
-            placeholder="Address *"
-          />
-          <br />
-
-          <input
-            className="right-form"
             type="text"
             name="town"
             required={true}
             ref={register}
-            placeholder="Town *"
+            placeholder="Email *"
           />
           <br />
 
-          <input
-            className="left-form"
-            type="text"
-            name="postcode"
-            required={true}
-            ref={register}
-            placeholder="Postcode *"
-          />
           <br />
           <input
-            className="right-form"
             name="message"
-            maxLength="300"
+            maxLength="3000"
             ref={register}
-            placeholder="Allergies, dietary requirements, pets..."
+            placeholder="Reason for contact"
           />
           <br />
           <input type="hidden" name="contact_number" value={contactNumber} />
           <input className="button" type="submit" value="Send" />
         </form>
       </div>
-      <div className="right-request">
-        <img src={pack} alt="" className="pack-image" />
-      </div>
     </div>
   );
 };
 
-export default Request;
+export default GetInTouch;

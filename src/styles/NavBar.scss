@@ -1,237 +1,89 @@
 @import "../styles/Variables.scss";
 
-.nav {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 5px 0 5px 0;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.left {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.middle {
-  flex: 3;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-
-.right {
-  flex: 1;
-}
-
-.logo {
-  width: 180px;
-  height: auto;
-  cursor: pointer;
-}
-
-.nav-list,
-.social-links {
+li {
   list-style: none;
 }
 
-.nav-items {
-  font-size: 26px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  width: 100vw;
+  align-items: center;
+  position: sticky;
+  background-color: #fff;
+}
+
+nav .logo {
+  width: 200px;
+  height: auto;
+  margin-right: 100px;
+  padding-top: 6px;
+}
+
+nav .link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
   color: $pink;
-  padding: 0 60px 0 0;
-  display: inline-block;
+}
+
+nav .link:visited {
+  color: $pink;
+}
+
+nav .link:hover {
+  border-bottom: 2px solid $pink;
+}
+
+nav .nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+nav .nav-link-item {
+  font-size: 18px;
+}
+
+.nav-icon {
+  display: none;
+}
+
+nav .burger {
+  font-size: 30px;
+  display: none;
   cursor: pointer;
 }
 
-.nav-items::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: $pink;
-  transition: width 0.3s;
-}
-
-.nav-items:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 0 0 10px;
-}
-
-.icons {
-  width: 40px;
-  height: 40px;
-}
-
-@media (max-width: 1459px) {
-  .nav-items {
-    font-size: 23px;
+@media all and (max-width: 768px) {
+  .nav-icon {
+    display: inherit;
+    color: $pink;
+    font-size: 32px;
   }
 
-  .nav {
-    max-width: 100vw;
-    max-height: 8vh;
-  }
-}
-
-@media (max-width: 1378px) {
-  .nav-items {
-    font-size: 22px;
-  }
-  .icons {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-@media (max-width: 1306px) {
-  .nav-items {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1230px) {
-  .nav-items {
-    font-size: 18px;
-  }
-}
-@media (max-width: 1154px) {
-  .nav-items {
-    font-size: 22px;
-  }
-  .right {
-    display: none;
-  }
-  .logo {
-    width: 175px;
-  }
-}
-
-@media (max-width: 1046px) {
-  .nav-items {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 982px) {
-  .nav-items {
-    font-size: 17px;
-  }
-  .logo {
-    width: 150px;
-  }
-}
-
-@media (max-width: 891px) {
-  .nav-items {
-    font-size: 17px;
-    padding: 0 40px 0 0;
-  }
-}
-
-@media (max-width: 787px) {
-  .nav-items {
-    font-size: 16px;
-    padding: 0 30px 0 0;
-  }
-  .logo {
-    width: 125px;
-  }
-}
-
-@media (max-width: 702px) {
-  .nav-items {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 659px) {
-  .nav-items {
-    font-size: 14px;
+  nav .nav-link {
+    position: absolute;
+    display: block;
+    top: -16px;
+    left: 0;
+    height: 100vh;
+    background: #fff3a9;
+    width: 60%;
+    transform: translateX(-500px);
+    transition: 0.3s ease-in-out;
   }
 
-  .logo {
-    width: 100px;
+  nav .nav-link li:first-of-type {
+    margin-top: 60px;
   }
-}
-
-@media (max-width: 639px) {
-  .nav-items {
-    font-size: 13px;
-  }
-}
-@media (max-width: 609px) {
-  .nav-items {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 581px) {
-  .left {
-    display: none;
+  nav .nav-link li {
+    padding: 25px;
+    text-align: center;
   }
 
-  .nav-items {
-    padding: 0 40px 0 0;
-  }
-}
-
-@media (max-width: 560px) {
-  .nav-items {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 474px) {
-  .nav-items {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 454px) {
-  .nav-items {
-    font-size: 11px;
-    padding: 0 30px 0 0;
-  }
-}
-
-@media (max-width: 415px) {
-  .nav-items {
-    font-size: 10px;
-    padding: 0 30px 0 0;
-  }
-}
-
-@media (max-width: 390px) {
-  .nav-items {
-    font-size: 10px;
-    padding: 0 20px 0 0;
-  }
-}
-
-@media (max-width: 350px) {
-  .nav-items {
-    font-size: 9px;
-    padding: 0 20px 0 0;
-  }
-}
-
-@media (max-width: 325px) {
-  .nav-items {
-    font-size: 8px;
-    padding: 0 20px 0 0;
+  nav .link:hover {
+    border-bottom: 0px solid #fff;
   }
 }

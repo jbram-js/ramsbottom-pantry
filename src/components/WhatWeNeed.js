@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import food from "../images/food4.jpg";
+import food from "../images/food2.jpg";
 import "../styles/Controller.scss";
 
 const WhatWeNeed = () => {
   return (
     <div className="wwn">
       <div className="left-wwn">
+        <img src={food} alt="contact us image" className="wwn-image" />
         <h1>What we need</h1>
         <p className="wwn-p">
           We rely on the generosity and community spirit of Ramsbottom. We
@@ -26,9 +27,6 @@ const WhatWeNeed = () => {
           <li className="wwn-list-item">Nappies & baby items</li>
           <li className="wwn-list-item">Pet food</li>
         </ul>
-      </div>
-      <div className="right-wwn">
-        <img src={food} className="food-image" />
       </div>
     </div>
   );

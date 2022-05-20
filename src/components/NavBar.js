@@ -1,113 +1,57 @@
-import React from "react";
-import {Link, animateScroll} from "react-scroll";
+import React, {useState} from "react";
+import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/rp_logo.svg";
-import facebook from "../images/facebook.svg";
-import instagram from "../images/instagram.svg";
-import gofundme from "../images/gofundme.svg";
 import "../styles/Controller.scss";
 
 const NavBar = () => {
-  const handleScrollToTop = () => {
-    animateScroll.scrollToTop();
-  };
+  const [open, setOpen] = useState(false);
+
+  const showSidebar = () => setOpen(!open);
+  const hideSidebar = () => setOpen(false);
 
   return (
     <div className="nav">
-      <div className="left">
-        <img
-          src={logo}
-          alt="Ramsbottom Pantry logo"
-          className="logo"
-          onClick={() => handleScrollToTop()}
-        />
-      </div>
-      <div className="middle">
-        <ul className="nav-list">
-          <li className="nav-items"></li>
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
+      <nav>
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Ramsbottom Pantry logo" />
+          </Link>
+        </div>
+        <ul
+          className="nav-link"
+          style={{
+            transform: open ? "translateX(0px)" : "",
+          }}
+        >
+          <li className="nav-link-item">
+            <Link to="/" className="link" onClick={hideSidebar}>
               About us
             </Link>
           </li>
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="wwn"
-              spy={true}
-              smooth={true}
-              offset={-30}
-              duration={500}
-            >
+          <li className="nav-link-item">
+            <Link to="/what-we-need" className="link" onClick={hideSidebar}>
               What we need
             </Link>
           </li>
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="request"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-            >
-              Request a pack
+          <li className="nav-link-item">
+            <Link to="/get-in-touch" className="link" onClick={hideSidebar}>
+              Get in touch
             </Link>
           </li>
-          <li className="nav-items">
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              Contact us
+          <li className="nav-link-item">
+            <Link to="/our-links" className="link" onClick={hideSidebar}>
+              Our links
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="right">
-        <ul className="social-links">
-          <li>
-            <a
-              href="https://www.facebook.com/RamsbottomPantry"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <img src={facebook} className="icons" alt="Facebook" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/ramsbottompantry/?igshid=cg47ldzp8d2d"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <img src={instagram} className="icons" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.gofundme.com/f/ramsbottom-pantry-food-bank?qid=3703310c60b9b3f29bab282f04722fbf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <img src={gofundme} className="icons" alt="GoFundMe" />
-            </a>
-          </li>
-        </ul>
-      </div>
+        <FontAwesomeIcon
+          icon={faBars}
+          onClick={showSidebar}
+          className="nav-icon"
+        />
+      </nav>
     </div>
   );
 };

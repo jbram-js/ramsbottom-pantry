@@ -1,9 +1,10 @@
 @import "./NavBar.scss";
+@import "./App.scss";
 @import "./Landing.scss";
 @import "./News.scss";
 @import "./About.scss";
 @import "./WhatWeNeed.scss";
-@import "./Request.scss";
+@import "./GetInTouch.scss";
 @import "./Contact.scss";
 @import "./Footer.scss";
 @import "./Variables.scss";
@@ -21,13 +22,24 @@ body {
 
 h1 {
   font-size: 40px;
+  font-weight: 400;
   color: $pink;
+  text-align: left;
+  padding-left: 2vw;
+}
+
+p {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  line-height: 40px;
 }
 
 p,
 li {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 300;
 }
+
 @media (max-width: 1200px) {
   p,
   li {
