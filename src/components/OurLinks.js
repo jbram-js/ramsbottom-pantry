@@ -9,7 +9,7 @@ import contact from "../images/contact.jpg";
 import twitter from "../images/twitter.svg";
 import "../styles/Controller.scss";
 
-const Contact = () => {
+const OurLinks = () => {
   return (
     <div className="contact">
       <img src={contact} alt="contact us image" className="contact-image" />
@@ -20,8 +20,8 @@ const Contact = () => {
         fundraisers follow us on social media.
         <br />
         <br />
-        If you are in need of our help you can fill in the form through the
-        request a pack page. If you would like to discuss anything further or
+        If you are in need of our help you can fill out the contact form through
+        our Get in touch page. If you would like to discuss anything further or
         wish to help us then please drop us an email or give us a call.
         <br />
         <br />
@@ -89,4 +89,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default OurLinks;

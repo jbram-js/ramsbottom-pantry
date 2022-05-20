@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import About from "./About";
 import WhatWeNeed from "./WhatWeNeed";
 import GetInTouch from "./GetInTouch";
-import Contact from "./Contact";
+import OurLinks from "./OurLinks";
 import Footer from "./Footer";
 import "../styles/Controller.scss";
 
@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<About />} />
         <Route path="/what-we-need" element={<WhatWeNeed />} />
         <Route path="/get-in-touch" element={<GetInTouch />} />
-        <Route path="/our-links" element={<Contact />} />
+        <Route path="/our-links" element={<OurLinks />} />
       </Routes>
       <Footer />
     </div>
