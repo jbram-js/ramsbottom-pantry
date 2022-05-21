@@ -48,9 +48,6 @@ const GetInTouch = () => {
         <h1>Get in touch</h1>
 
         <p className="contact-p">
-          For just £3 a week users can come down to the pantry on a Tuesday &
-          Thursday for a 'shop'. <br />
-          <br />
           If you would like any more information or to speak to a member of our
           team please complete the contact form below. A member of our team will
           get back to you as quickly as possible. Alternatively, you can get in
