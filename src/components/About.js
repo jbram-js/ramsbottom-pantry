@@ -56,18 +56,17 @@ const About = () => {
           the local community to help those who need it.
           <br />
           <br />
-          The COVID-19 pandemic has brought unprecedented challenges to so many
-          peoples lives and has truly highlighted how anybody can be in need of
-          emergency food at anytime. There is no 'type' of person. When a crisis
-          hits we aim to bridge the gap and offer our support. Whether you have
-          been furloughed, had your hours reduced, lost your job, waiting on a
-          Universal Credit payment or had unexpected additional expenses we are
-          here to help.
+          The Cost of Living crisis and the aftermath of the COVID-19 pandemic
+          have brought unprecedented challenges to so many peoples lives, and
+          have truly highlighted how anybody can be in need of emergency food at
+          anytime. There is no 'type' of person. When a crisis hits we aim to
+          bridge the gap and offer our support. No matter your circumstances we
+          are here to provide completely judgement free help.
           <br />
           <br />
           For just £3 a week user can come down to the pantry and select food,
           drink and sanitary items they wish from the categories outlined. We
-          are open Tuesdays & Thursdays between 12-3 down at Christ Church
+          are open Tuesdays & Thursdays between 12-2pm down at Christ Church
           Ramsbottom.
         </p>
       </div>

@@ -1,25 +1,13 @@
 @import "../styles/Variables.scss";
 
-.request {
+.contact {
   display: flex;
   align-items: center;
 }
 
-.left-request {
-  flex: 2;
+.contact-content {
   display: flex;
   flex-direction: column;
-}
-
-.right-request {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.request-p {
-  text-align: left;
 }
 
 .postcode {
@@ -28,7 +16,7 @@
 
 input {
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   border-bottom: 2px solid $pink;
   padding: 20px 0 10px 0;
@@ -39,7 +27,6 @@ input {
   border-radius: 0;
   outline: none;
   width: 75vw;
-  margin-left: 2vw;
 }
 
 .button {
@@ -47,11 +34,11 @@ input {
   width: 20%;
   height: auto;
   font-size: 20px;
-  color: #000;
+  color: $black;
   border: 2px solid $pink;
   padding: 10px;
   margin-top: 20px;
-  background-color: #fff;
+  background-color: $white;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -62,7 +49,7 @@ input {
 
 .button:hover {
   background-color: $pink;
-  color: #fff;
+  color: $white;
 }
 
 .status-message {
@@ -72,16 +59,16 @@ input {
 
 .success {
   opacity: 1;
-  color: #000;
-  background: #f4fef4;
+  color: $black;
+  background: $off-white;
   padding: 6px 16px 6px 16px;
   text-align: center;
 }
 
 .failure {
   opacity: 1;
-  color: #000;
-  background: #ffe5e5;
+  color: $black;
+  background: $pink-fail;
   padding: 6px 16px 6px 16px;
   text-align: center;
 }
@@ -93,50 +80,34 @@ input {
   object-fit: cover;
 }
 
-@media (max-width: 1280px) {
-  .left-request h1 {
-    padding-top: 50px;
-  }
-}
-
 @media (max-width: 1200px) {
-  .request {
+  .contact {
     flex-direction: column;
     height: auto;
   }
-}
-
-@media (max-width: 891px) {
-  .left-request h1 {
-    padding-top: 50px;
-  }
-}
-
-@media (max-width: 750px) {
-  .button {
+  .button,
+  input {
     font-size: 18px;
   }
+}
 
+@media (max-width: 800px) {
+  .button,
+  input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button,
   input {
     font-size: 16px;
   }
 }
 
-@media (max-width: 600px) {
-}
-
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .button,
   input {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 350px) {
-  input {
-    font-size: 12px;
-  }
-  .button {
-    font-size: 13px;
   }
 }

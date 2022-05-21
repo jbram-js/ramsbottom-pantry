@@ -14,7 +14,7 @@ const MapContainer = () => {
   };
   const locations = [
     {
-      name: "Christchurch Ramsbottom",
+      name: "Ramsbottom Pantry",
       location: {
         lat: 53.652534,
         lng: -2.315703,

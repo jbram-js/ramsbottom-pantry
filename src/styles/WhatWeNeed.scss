@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.left-wwn {
+.wwn-content {
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +20,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 0;
+  margin-left: -2vw;
   padding: 0;
 }
 
@@ -55,9 +55,5 @@
   .wwn-list {
     display: flex;
     flex-direction: column;
-  }
-
-  .wwn-list-item {
-    flex: 50%;
   }
 }

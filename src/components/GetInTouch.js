@@ -42,12 +42,12 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="request">
-      <div className="left-request">
+    <div className="contact">
+      <div className="contact-content">
         <img src={pack} alt="" className="pack-image" />
         <h1>Get in touch</h1>
 
-        <p className="request-p">
+        <p className="contact-p">
           For just £3 a week users can come down to the pantry on a Tuesday &
           Thursday for a 'shop'. <br />
           <br />
@@ -84,7 +84,7 @@ const GetInTouch = () => {
 
           <input
             type="text"
-            name="town"
+            name="email"
             required={true}
             ref={register}
             placeholder="Email *"
@@ -96,7 +96,8 @@ const GetInTouch = () => {
             name="message"
             maxLength="3000"
             ref={register}
-            placeholder="Reason for contact"
+            required={true}
+            placeholder="Reason for contact *"
           />
           <br />
           <input type="hidden" name="contact_number" value={contactNumber} />

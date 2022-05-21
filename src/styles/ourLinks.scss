@@ -1,34 +1,41 @@
-.contact-p {
-  line-height: 40px;
-  text-align: justify;
+@import "../styles/Variables.scss";
+
+.links {
+  display: flex;
+  align-items: center;
 }
 
-.icons-contact {
+.links-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-links {
   vertical-align: middle;
   width: 45px;
   height: 45px;
   padding-right: 20px;
 }
 
-.contact a,
-.contact a:visited {
+.links a,
+.links a:visited {
   text-decoration: none;
-  color: #000;
+  color: $black;
 }
 
-.contact a:hover {
+.links a:hover {
   text-decoration: none;
   color: $pink;
 }
 
-.contact-image {
+.links-image {
   display: flex;
   width: 100vw;
   height: 70vh;
   object-fit: cover;
 }
 
-.contact-list {
+.links-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -37,33 +44,39 @@
   padding: 20px 0 20px 0;
 }
 
-.contact-list-items {
+.links-list-items {
   flex: 33%;
   padding: 25px 0 25px 0;
 }
 
 @media (max-width: 960px) {
-  .contact-list-items {
+  .links-list-items {
     flex: 50%;
   }
 }
 
-@media (max-width: 575px) {
-  .contact-list-items {
+@media (max-width: 650px) {
+  .links-list-items {
     flex: 100%;
     text-align: left;
+    margin-left: 30vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .links-list-items {
     margin-left: 25vw;
   }
 }
 
 @media (max-width: 500px) {
-  .contact-list-items {
+  .links-list-items {
     margin-left: 20vw;
   }
 }
 
 @media (max-width: 440px) {
-  .contact-list-items {
+  .links-list-items {
     margin-left: 15vw;
   }
 }

@@ -1,6 +1,5 @@
 @import "./NavBar.scss";
 @import "./App.scss";
-@import "./Landing.scss";
 @import "./News.scss";
 @import "./About.scss";
 @import "./WhatWeNeed.scss";
@@ -26,12 +25,14 @@ h1 {
   color: $pink;
   text-align: left;
   padding-left: 2vw;
+  padding-top: 4vh;
 }
 
 p {
   padding-left: 2vw;
   padding-right: 2vw;
   line-height: 40px;
+  text-align: left;
 }
 
 p,
@@ -41,6 +42,10 @@ li {
 }
 
 @media (max-width: 1200px) {
+  p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   p,
   li {
     font-size: 18px;
@@ -51,6 +56,10 @@ li {
 }
 
 @media (max-width: 800px) {
+  p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   p,
   li {
     font-size: 18px;
@@ -61,6 +70,10 @@ li {
 }
 
 @media (max-width: 650px) {
+  p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   p,
   li {
     font-size: 16px;
@@ -71,6 +84,10 @@ li {
 }
 
 @media (max-width: 400px) {
+  p {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   p,
   li {
     font-size: 14px;
