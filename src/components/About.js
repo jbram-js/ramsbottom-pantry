@@ -43,7 +43,7 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div className="left-about">
+      <div className="about-content">
         <img
           src={community}
           alt="Ramsbottom Pantry community"
