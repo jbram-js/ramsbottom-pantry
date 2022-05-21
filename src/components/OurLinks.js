@@ -86,6 +86,7 @@ const OurLinks = () => {
           </span>
           .
         </p>
+        <br />
         <Map />
       </div>
     </div>
