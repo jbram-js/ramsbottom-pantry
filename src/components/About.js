@@ -66,7 +66,7 @@ const About = () => {
           <br />
           For just £3 a week anybody in need can come down to the pantry and
           select food, drink and sanitary items they wish from the categories
-          outlined. We are open Tuesdays & Thursdays between 12-2pm down at
+          outlined. We are open Tuesdays & Thursdays between 12 - 2pm down at
           Christ Church Ramsbottom.
         </p>
       </div>
