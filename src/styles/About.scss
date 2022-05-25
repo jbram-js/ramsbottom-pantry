@@ -20,8 +20,8 @@
   background-color: $white-op;
   border-radius: 10px;
   margin: 10px;
-  width: 20vw;
-  height: 22vh;
+  width: 22vw;
+  height: 24vh;
   overflow: hidden;
 }
 
@@ -41,7 +41,8 @@
 .card-details {
   text-align: center;
   color: $black;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 30px;
   padding: 10px;
 }
 
@@ -98,6 +99,23 @@
 @media (max-width: 700px) {
   .community {
     margin-top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-details {
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 5px;
+  }
+  .landing-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 55vw;
+    height: 16vh;
+    overflow: hidden;
   }
 }
 
