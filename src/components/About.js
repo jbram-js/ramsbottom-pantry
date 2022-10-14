@@ -66,8 +66,24 @@ const About = () => {
           <br />
           For just £3 a week anybody in need can come down to the pantry and
           select food, drink and sanitary items they wish from the categories
-          outlined. We are open Tuesdays & Thursdays between 12 - 2pm down at
-          Christ Church Ramsbottom.
+          outlined. We are open every Tuesdays & Thursdays between 10:00 - 12:00
+          down at Christ Church Ramsbottom.
+          <br />
+          <br />
+          If you are in need of any further help or support please do not
+          hesitate to speak to one of our friendly volunteers. As much as
+          possible, we can assist with putting you in contact with the local
+          authorities for advice on what support you may be entitled to.
+        </p>
+        <h1>Thursday drop-in cafe</h1>
+        <br />
+        <p className="about-p">
+          Every Thursday between 10:00 - 12:00, Christ Church run a free drop-in
+          cafe in conjunction with the pantry opening times. Why not join us for
+          a warm welcome with complimentary hot drinks, cake and a friendly
+          chat. Whether you are out for a walk, feeling lonely, anxious or just
+          need of homemade cake - all are welcome. Bury floating support are
+          also in attendance to provide any housing advice.
         </p>
       </div>
     </div>
