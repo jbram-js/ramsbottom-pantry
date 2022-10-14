@@ -44,6 +44,7 @@
   color: $black;
   font-size: 16px;
   line-height: 30px;
+  margin: 10px;
 }
 
 .about {
@@ -106,7 +107,8 @@
   .card-details {
     font-size: 12px;
     line-height: 20px;
-    margin: 5px;
+    margin-left: 5px;
+    padding: 10px;
   }
   .landing-card {
     display: flex;
@@ -115,6 +117,7 @@
     align-items: center;
     width: 55vw;
     height: 15vh;
+    padding: 5px;
     overflow: hidden;
   }
 }
