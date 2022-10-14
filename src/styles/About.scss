@@ -19,9 +19,8 @@
   align-items: center;
   background-color: $white-op;
   border-radius: 10px;
-  margin: 20px;
   margin: 10px;
-  width: 22vw;
+  width: 24vw;
   height: 24vh;
   overflow: hidden;
 }
@@ -44,7 +43,7 @@
   color: $black;
   font-size: 16px;
   line-height: 30px;
-  margin: 10px;
+  padding: 10px;
 }
 
 .about {
@@ -108,7 +107,6 @@
     font-size: 12px;
     line-height: 20px;
     margin-left: 5px;
-    padding: 10px;
   }
   .landing-card {
     display: flex;
