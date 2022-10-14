@@ -13,7 +13,7 @@ const About = () => {
           <img src={facebook} className="card-image" />
           <a href="https://www.facebook.com/RamsbottomPantry" target="_blank">
             <span class="card-details">
-              Like our Facebook page for all the latest events, news &
+              Like our Facebook page for all the latest appeals, events, news &
               fundraisers.
             </span>
           </a>
@@ -37,8 +37,8 @@ const About = () => {
             target="_blank"
           >
             <span class="card-details">
-              Follow us on Instagram to see how we have helped the Ramsbottom
-              community.
+              Follow us on Instagram to see how we have helped people within the
+              Ramsbottom community.
             </span>
           </a>
         </div>
