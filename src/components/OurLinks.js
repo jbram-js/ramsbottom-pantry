@@ -55,7 +55,7 @@ const OurLinks = () => {
             </a>
           </li>
           <li className="links-list-items">
-            <a href="tel:+447988752263">
+            <a href="tel:+447566712558">
               <img src={phone} className="icons-links" alt="Call" />
               <span>Give us a call</span>
             </a>
