@@ -73,7 +73,7 @@ const About = () => {
           possible, we can assist with putting you in contact with the local
           authorities for advice on what support you may be entitled to.
         </p>
-          <div className="about-content">
+          <div>
           <iframe
             src="https://drive.google.com/file/d/12P1TJABNydu0UXP85ZwCSN4D8R5-tFSa/view?usp=sharing"
             width="90vw"
