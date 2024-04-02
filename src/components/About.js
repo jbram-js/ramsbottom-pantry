@@ -4,6 +4,7 @@ import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import gofundme from "../images/gofundme.svg";
 import community from "../images/community.svg";
+import pantry from "../images/pantry.png";
 
 const About = () => {
   return (
@@ -73,8 +74,11 @@ const About = () => {
           possible, we can assist with putting you in contact with the local
           authorities for advice on what support you may be entitled to.
         </p>
-       <object data="https://drive.google.com/file/d/12P1TJABNydu0UXP85ZwCSN4D8R5-tFSa/view?usp=sharing" type="application/pdf" width="100%" height="100%">
-  </object>
+    <img
+          src={pantry}
+          alt="Ramsbottom Pantry PDF"
+          className="pantry-pdf"
+        />
         <h1>Thursday drop-in cafe</h1>
         <br />
         <p className="about-p">
