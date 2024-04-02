@@ -74,11 +74,7 @@ const About = () => {
           possible, we can assist with putting you in contact with the local
           authorities for advice on what support you may be entitled to.
         </p>
-    <img
-          src={pantry}
-          alt="Ramsbottom Pantry PDF"
-          className="pantry-pdf"
-        />
+ 
         <h1>Thursday drop-in cafe</h1>
         <br />
         <p className="about-p">
