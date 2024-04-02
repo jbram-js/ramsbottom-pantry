@@ -52,19 +52,17 @@ const About = () => {
         <p className="about-p">
           We are a voluntary food pantry based in Ramsbottom. Our function is to
           be the arms that reach out to the community directly. We are a
-          completely donation driven food pantry who rely on the generosity of
-          the local community to help those who need it.
+          completely donation-driven food pantry that that relies on the local community's generosity to help those who need it.
           <br />
           <br />
-          The Cost of Living crisis and the aftermath of the COVID-19 pandemic
-          have brought unprecedented challenges to so many peoples lives, and
+          The Cost of Living crisis has brought unprecedented challenges to so many people's lives and
           have truly highlighted how anybody can be in need of emergency food at
-          anytime. There is no 'type' of person. When a crisis hits we aim to
+          any time. There is no 'type' of person. When a crisis hits we aim to
           bridge the gap and offer our support. No matter your circumstances we
           are here to provide completely judgement free help.
           <br />
           <br />
-          For just £3 a week anybody in need can come down to the pantry and
+          For just £5 a week anybody in need can come down to the pantry and
           select food, drink and sanitary items they wish from the categories
           outlined. We are open every Tuesdays & Thursdays between 10:00 - 12:00
           down at Christ Church Ramsbottom.
@@ -75,6 +73,13 @@ const About = () => {
           possible, we can assist with putting you in contact with the local
           authorities for advice on what support you may be entitled to.
         </p>
+          <div className="about-content">
+          <iframe
+            src="https://drive.google.com/file/d/12P1TJABNydu0UXP85ZwCSN4D8R5-tFSa/view?usp=sharing"
+            width="90vw"
+            height="50vh"
+          />
+        </div>
         <h1>Thursday drop-in cafe</h1>
         <br />
         <p className="about-p">
